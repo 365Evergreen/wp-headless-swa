@@ -1,0 +1,114 @@
+.main {
+  flex: 1;
+  padding-block: var(--space-xl);
+}
+
+/* ─── Breadcrumb ──────────────────────────────────────────────────────────── */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.875rem;
+  color: var(--colour-text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.sep {
+  color: var(--colour-border);
+}
+
+/* ─── Status ──────────────────────────────────────────────────────────────── */
+.status {
+  color: var(--colour-text-muted);
+  text-align: center;
+  padding-block: var(--space-xl);
+}
+
+.statusError {
+  color: #c0392b;
+  text-align: center;
+  padding-block: var(--space-xl);
+}
+
+/* ─── Article ─────────────────────────────────────────────────────────────── */
+.article {
+  max-width: 76ch;
+  margin-inline: auto;
+}
+
+.featuredImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: var(--space-xl);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--colour-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+/* ─── WordPress content styles ────────────────────────────────────────────── */
+.content {
+  line-height: 1.8;
+}
+
+.content p {
+  margin-bottom: var(--space-md);
+}
+
+.content h2,
+.content h3,
+.content h4 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.content ul,
+.content ol {
+  list-style: revert;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.content img {
+  border-radius: 4px;
+  margin-block: var(--space-md);
+}
+
+.content blockquote {
+  border-left: 4px solid var(--colour-primary);
+  padding-left: var(--space-md);
+  margin-inline: 0;
+  color: var(--colour-text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.content a {
+  color: var(--colour-link);
+}
+
+.content a:hover {
+  color: var(--colour-link-hover);
+}
+
+/* ─── Tablet and up ───────────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}

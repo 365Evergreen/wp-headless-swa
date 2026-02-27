@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--colour-primary);
+  border-bottom: 1px solid var(--colour-primary-dark);
+  height: var(--header-height);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.brand {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .brand {
+    font-size: 1.375rem;
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--colour-text);
+  color: #e0e0e0;
+  padding-block: var(--space-lg);
+  margin-top: auto;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.copy {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .copy {
+    text-align: left;
+  }
+}
