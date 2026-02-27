@@ -18,7 +18,7 @@
 
 .header-logo a {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease;
